@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/calendar.css">
+    <script src="JS/calendar.js" defer></script>
+    <link rel="stylesheet" href="CSS/size.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+</head>
+<body>
+    <div class="header">
+        <h1>ABOUT</h1>
+        <div class="calendar-container">
+            <!-- Header-->
+            <div class="calendar-header">
+                <button class="nav-btn" id="prevMonth">&lt;</button>
+                <h2 id="monthYearDisplay"></h2>
+                <button class="nav-btn" id="nextMonth">&gt;</button>
+            </div>
+            
+            <!-- Body Layout-->
+            <div class="calendar-body">
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days" id="daysGrid"></div>
+            </div> 
+        </div>
+    </div>
+    <div class="navibar">
+        <ul>
+                <li><a href="index.php">HOME</a></li>
+                <li><a href="ABOUT.HTML">ABOUT</a></li>
+                <li><a href="SETTING.HTML">SETTING</a></li>
+                <li><a href="CONTACT.HTML">CONTACT</a></li>
+                <li><a href="ACCOUNT.php">ACCOUNT</a></li>
+                <li><a href="FORM.php">FORM</a></li>
+            </ul>
+    </div>
+    <div class="leftbox">
+        <h1>leftbox</h1>
+
+
+    </div>
+    <div class="article">
+        <div class="carousel">
+            <input type="radio" name="slide" id="s1" checked>
+            <input type="radio" name="slide" id="s2">
+            <input type="radio" name="slide" id="s3">
+            <input type="radio" name="slide" id="s4">
+            <input type="radio" name="slide" id="s5">
+
+            <div class="slides">
+                <div class="slide"><img src="IMG/cat5.jpg" alt=""></div>
+                <div class="slide"><img src="IMG/cat4.jpg" alt=""></div>
+                <div class="slide"><img src="IMG/cat3.jpg" alt=""></div>
+                <div class="slide"><img src="IMG/cat2.jpg" alt=""></div>
+                <div class="slide"><img src="IMG/cat1.jpg" alt=""></div>
+            </div>
+
+            <label for="s1" class="arr prev">◀</label>
+            <label for="s2" class="arr prev">◀</label>
+            <label for="s3" class="arr prev">◀</label>
+            <label for="s4" class="arr prev">◀</label>
+
+            <label for="s2" class="arr next">▶</label>
+            <label for="s3" class="arr next">▶</label>
+            <label for="s4" class="arr next">▶</label>
+            <label for="s5" class="arr next">▶</label>
+
+            <div class="dots">
+                <label for="s1"></label>
+                <label for="s2"></label>
+                <label for="s3"></label>
+                <label for="s4"></label>
+                <label for="s5"></label>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>footer</h1>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nav {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    color: #f0f0f0;
+}
+.nav a {
+    display: block;
+    padding: 0 15px;
+    line-height: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color:rgb(100, 10, 18);
+}
+.nav__menu {
+    line-height: 38px;
+    text-transform: uppercase;
+}
+.nav__menu-item {
+    text-align: center;
+    width: 19.54%;
+    display: inline-block;
+    position: relative;
+}
+.nav__menu-item:hover {
+    border: 1px rgba(255, 255, 255, 0.37) solid;
+    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0.295),rgba(255, 255, 255, 0.075));
+
+}
+.nav__menu-item:hover .nav__submenu {
+    display: block;
+}
+.nav__submenu {
+    text-decoration: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px rgba(255, 255, 255, 0.37) solid;
+    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0.295),rgba(255, 255, 255, 0.075));
+    z-index: 10;
+}
+.navibar .nav__submenu {
+    display: none;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+}
+.navibar .nav__menu-item:hover > .nav__submenu {
+    display: flex;
+}
+.navibar .nav__submenu-item {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+}
+.nav__submenu-item:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+.navibar .nav__submenu-item > a:hover {
+    border-radius: 0;
+}

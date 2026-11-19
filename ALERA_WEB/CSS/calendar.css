@@ -1,0 +1,109 @@
+/* Calendar Container */
+.calendar-container {
+    backdrop-filter: blur(10px);
+    top: 3px;
+    position: absolute;
+    height: 15vh;
+    width: 25vh;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff6c;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+/* Header Styling */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f04f4fad;
+    color: #ffffff;
+    flex: 0 0 auto;
+    padding: 3px 6px;
+}
+.calendar-header h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.nav-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 0.7rem;
+    padding: 1px 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+/* Grid Framework */
+.calendar-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+    padding: 2px 6px;
+}
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+/* Weekdays row */
+.weekdays {
+    font-weight: 600;
+    color: #dd9a9a;
+    flex: 0 0 auto;
+    font-size: 0.55rem;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+}
+/* Days Grid */
+.days {
+    flex: 1;
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    min-height: 0;
+}
+.days button {
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    color: #2d3436;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+/* Interactive states */
+.days button:hover {
+    background-color: #f1f2f6;
+    color: #e75c5c;
+}
+/* Inactive adjacent month days */
+.days button.prev-date, 
+.days button.next-date {
+    color: #c3b2b2;
+    opacity: 0.5;
+}
+/* Current Highlighted Day */
+.days button.today {
+    background-color: #e75c5c9a;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(231, 92, 92, 0.4);
+}
+.days button.selected:not(.today) {
+    background-color: #dcd8ff;
+    color: #c73f3f;
+    font-weight: bold;
+}
